@@ -57,7 +57,7 @@ void DELETE(Node* head,int key)
 }
 Node* Insert(Node* head,int i,int data)
 {
-    Node* lund=new Node(data);
+    Node* lu=new Node(data);
     Node* pehla=head;
     Node* dusra;
     while(pehla->next->data!=i)
@@ -65,8 +65,8 @@ Node* Insert(Node* head,int i,int data)
         pehla=pehla->next;
     }
     dusra=pehla->next;
-    pehla->next=lund;
-    lund->next=dusra;
+    pehla->next=lu;
+    lu->next=dusra;
     return head;
 }
 void insertatTail(Node* &head,Node* &tail,int d)
